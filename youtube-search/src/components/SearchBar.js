@@ -1,5 +1,6 @@
 import React from "react";
 import { Segment, Input } from "semantic-ui-react";
+import { connect } from "react-redux";
 
 const SearchBar = (props) => {
   const searchTerm = (event) => {
@@ -22,4 +23,4 @@ const SearchBar = (props) => {
   );
 };
 
-export default SearchBar;
+export default connect(null, null)(SearchBar);
